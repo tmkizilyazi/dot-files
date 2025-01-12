@@ -1,5 +1,3 @@
-# dot-files
-dot-files
 "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
@@ -211,5 +209,18 @@ dot-files
       { "key": "Home", "mods": "Shift", "action": "ScrollToTop" },
       { "key": "End", "mods": "Shift", "action": "ScrollToBottom" }
     ]
-  }
+  },
+  "zenMode": {
+    "hideLineNumbers": false,
+    "hideStatusBar": false,
+    "centerLayout": false,
+    "restore": true,
+    "moveToSide": true,
+    "resize": true
+  },
+  "workbench.activityBar.visible": false,
+  "workbench.statusBar.visible": true,
+  "workbench.sideBar.location": "left",
+  "workbench.editor.showTabs": false,
+  "workbench.panel.defaultLocation": "bottom"
 }
