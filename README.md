@@ -1,4 +1,20 @@
-"vim.useSystemClipboard": true,
+{
+  "C_Cpp.intelliSenseEngine": "default",
+  "idf.espIdfPathWin": "C:\\Users\\Tmira\\esp\\v5.4\\esp-idf",
+  "idf.openOcdConfigs": [
+    "interface/ftdi/esp32_devkitj_v1.cfg",
+    "target/esp32.cfg"
+  ],
+  "idf.portWin": "COM10",
+  "idf.toolsPathWin": "c:\\Users\\Tmira\\esp\\v.5.4\\esp-idf",
+  "files.associations": {
+    "energy_meter.h": "c",
+    "ethernet.h": "c",
+    "energy_mqtt.h": "c",
+    "esp_sntp.h": "c",
+    "esp_log.h": "c"
+  },
+  "vim.useSystemClipboard": true,
   "vim.visualModeKeyBindingsNonRecursive": [
     {
       "before": ["<C-a>"],
@@ -33,27 +49,15 @@
   "editor.tokenColorCustomizations": {
     "textMateRules": [
       {
-        "scope": "keyword.control",
+        "scope": ["keyword.control.import", "keyword.control.directive"],
         "settings": {
-          "foreground": "#FF0000"
+          "foreground": "#FF00FF" // Pembe renk
         }
       },
       {
-        "scope": "storage.type",
+        "scope": ["storage.modifier", "storage.type.modifier", "support.type"],
         "settings": {
-          "foreground": "#00FF00"
-        }
-      },
-      {
-        "scope": "text",
-        "settings": {
-          "foreground": "#00eeff"
-        }
-      },
-      {
-        "scope": ["keyword", "storage.type", "storage.modifier"],
-        "settings": {
-          "foreground": "#ffd700"
+          "foreground": "#0000fffb" // Koyu mavi renk
         }
       },
       {
@@ -65,7 +69,7 @@
       {
         "scope": ["entity.name.function", "support.function"],
         "settings": {
-          "foreground": "#61afef"
+          "foreground": "#00ff95"
         }
       },
       {
@@ -77,9 +81,10 @@
     ]
   },
   "idf.flashType": "UART",
-  "workbench.colorTheme": "Gruvbox Dark Hard",
-  "editor.fontSize": 14,
-  "editor.fontFamily": "JetBrains Mono",
+  "workbench.colorTheme": "Attack On Titan Levi",
+  "editor.fontSize": 12,
+  "editor.fontFamily": "0xProto",
+  "editor.fontWeight": "bold",
   "editor.fontLigatures": true,
   "editor.lineHeight": 1.5,
   "editor.renderLineHighlight": "all",
@@ -98,15 +103,15 @@
     "editorCursor.foreground": "#f8f8f8",
     "editor.foreground": "#f8f8f8",
     "editorLineNumber.foreground": "#636363",
-    "editorLineNumber.activeForeground": "#f8f8f8"
+    "editorLineNumber.activeForeground": "#ff6701"
   },
-  "terminal.integrated.fontSize": 14,
-  "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "0xProto",
   "files.autoSave": "afterDelay",
   "files.autoSaveDelay": 1000,
   "workbench.startupEditor": "none",
   "workbench.editor.showTabs": "multiple",
-  "workbench.sideBar.location": "left",
+  // "workbench.sideBar.location": "left",
   "window.menuBarVisibility": "toggle",
   "window.zoomLevel": 0,
   "editor.suggestSelection": "first",
@@ -134,19 +139,19 @@
   "font": {
     "size": 14.0,
     "normal": {
-      "family": "JetBrainsMono Nerd Font",
+      "family": "Hack",
       "style": "Regular"
     },
     "bold": {
-      "family": "JetBrainsMono Nerd Font",
+      "family": "Hack",
       "style": "Bold"
     },
     "italic": {
-      "family": "JetBrainsMono Nerd Font",
+      "family": "Hack",
       "style": "Italic"
     },
     "bold_italic": {
-      "family": "JetBrainsMono Nerd Font",
+      "family": "Hacl",
       "style": "Bold Italic"
     }
   },
@@ -218,9 +223,9 @@
     "moveToSide": true,
     "resize": true
   },
-  "workbench.activityBar.visible": false,
   "workbench.statusBar.visible": true,
   "workbench.sideBar.location": "left",
-  "workbench.editor.showTabs": false,
-  "workbench.panel.defaultLocation": "bottom"
+  // "workbench.editor.showTabs": false,
+  "workbench.panel.defaultLocation": "bottom",
+  "workbench.activityBar.location": "hidden"
 }
