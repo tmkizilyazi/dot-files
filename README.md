@@ -33,7 +33,7 @@
       {
         "scope": ["keyword.control", "keyword.operator"],
         "settings": {
-          "foreground": "#5A7184",
+          "foreground": "#fd007f",
           "fontStyle": "bold"
         }
       },
@@ -47,7 +47,7 @@
       {
         "scope": ["variable", "support.variable"],
         "settings": {
-          "foreground": "#3A5245",
+          "foreground": "#219957",
           "fontStyle": ""
         }
       },
@@ -60,7 +60,7 @@
       {
         "scope": ["comment"],
         "settings": {
-          "foreground": "#556B6E",
+          "foreground": "#FFD700",
           "fontStyle": "italic"
         }
       },
@@ -87,7 +87,7 @@
 
   // Terminal Ayarları
   "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontFamily": "0xProto",
+  "terminal.integrated.fontFamily": "Hack",
   "terminal.integrated.lineHeight": 1.2,
 
   // Vim Entegrasyonu
