@@ -1,0 +1,4 @@
+# Name,    Type, SubType, Offset,  Size, Flags
+factory,   app,  factory, 0x010000, 5M
+nvs,       data, nvs,     0x510000, 64K
+fr,        data, ,        0x520000, 5M
