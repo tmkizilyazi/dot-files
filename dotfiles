@@ -1,166 +1,96 @@
 {
-"workbench.startupEditor": "none",
-  "workbench.editor.showTabs": "multiple",
-  "workbench.sideBar.location": "left",
-  "workbench.panel.defaultLocation": "bottom",
-  "workbench.activityBar.location": "default",
-  "workbench.statusBar.visible": true,
-  "window.menuBarVisibility": "toggle",
-  "window.zoomLevel": 0,
-  "zenMode.hideStatusBar": false,
-  "zenMode.hideLineNumbers": false,
-  "winopacity.opacity": 255,
-  "editor.fontSize": 12,
-  "editor.fontFamily": "0xProto",
-  "editor.fontWeight": "bold",
-  "editor.fontLigatures": true,
-  "editor.lineHeight": 1.6,
-  "editor.lineNumbers": "relative",
-  "editor.renderLineHighlight": "all",
-  "editor.cursorBlinking": "smooth",
-  "editor.cursorStyle": "line",
-  "editor.minimap.enabled": false,
-  "editor.bracketPairColorization.enabled": true,
-  "editor.guides.bracketPairs": "active",
-  "editor.formatOnSave": true,
-  "editor.renderWhitespace": "none",
-  "editor.tokenColorCustomizations": {
-    "textMateRules": [
-      {
-        "scope": [
-          "keyword.control",
-          "keyword.operator"
+    "workbench.startupEditor": "none",
+    "workbench.editor.showTabs": "multiple",
+    "workbench.sideBar.location": "left",
+    "workbench.panel.defaultLocation": "bottom",
+    "workbench.activityBar.location": "default",
+    "workbench.statusBar.visible": true,
+    "window.menuBarVisibility": "toggle",
+    "window.zoomLevel": 0,
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideLineNumbers": false,
+    // "winopacity.opacity": 230,
+    "editor": {
+        "fontSize": 13,
+        "fontFamily": "0xProto",
+        "fontWeight": "bold",
+        "fontLigatures": true,
+        "lineHeight": 1.6,
+        "lineNumbers": "relative",
+        "renderLineHighlight": "all",
+        "cursorBlinking": "smooth",
+        "cursorStyle": "line",
+        "minimap.enabled": false,
+        "bracketPairColorization.enabled": true,
+        "guides.bracketPairs": "active",
+        "formatOnSave": true,
+        "renderWhitespace": "none",
+        "tokenColorCustomizations": {
+            "textMateRules": [
+                {
+                    "scope": [
+                        "comment"
+                    ],
+                    "settings": {
+                        "foreground": "#FFD700",
+                        "fontStyle": "bold"
+                    }
+                }
+            ]
+        }
+    },
+    "terminal.integrated": {
+        "fontSize": 12,
+        "fontFamily": "Hack",
+        "lineHeight": 1.6
+    },
+    "vim": {
+        "useSystemClipboard": true,
+        "handleKeys": {
+            "<C-c>": false,
+            "<C-v>": false,
+            "<C-a>": false
+        },
+        "visualModeKeyBindingsNonRecursive": [
+            {
+                "before": [
+                    "<C-a>"
+                ],
+                "commands": [
+                    "editor.action.selectAll"
+                ]
+            }
         ],
-        "settings": {
-          "foreground": "#fd007f",
-          "fontStyle": "bold"
-        }
-      },
-      {
-        "scope": [
-          "entity.name.function",
-          "support.function"
+        "insertModeKeyBindingsNonRecursive": [
+            {
+                "before": [
+                    "<C-v>"
+                ],
+                "commands": [
+                    "editor.action.clipboardPasteAction"
+                ]
+            }
         ],
-        "settings": {
-          "foreground": "#03e8f0",
-          "fontStyle": "bold italic"
-        }
-      },
-      {
-        "scope": [
-          "variable",
-          "support.variable"
-        ],
-        "settings": {
-          "foreground": "#219957",
-          "fontStyle": ""
-        }
-      },
-      {
-        "settings": {
-          "foreground": "#9D7A54"
-        }
-      },
-      {
-        "scope": [
-          "comment"
-        ],
-        "settings": {
-          "foreground": "#FFD700",
-          "fontStyle": "italic"
-        }
-      },
-      {
-        "scope": [
-          "storage.type"
-        ],
-        "settings": {
-          "foreground": "#00fcfc",
-          "fontStyle": "bold"
-        }
-      }
-    ]
-  },
-  "files.autoSave": "afterDelay",
-  "files.autoSaveDelay": 1000,
-  "files.associations": {
-    "energy_meter.h": "c",
-    "ethernet.h": "c",
-    "energy_mqtt.h": "c",
-    "esp_sntp.h": "c",
-    "esp_log.h": "c",
-    "iostream": "cpp"
-  },
-  "terminal.integrated.fontSize": 12,
-  "terminal.integrated.fontFamily": "Hack",
-  "terminal.integrated.lineHeight": 1.6,
-  "vim.useSystemClipboard": true,
-  "vim.handleKeys": {
-    "<C-c>": false,
-    "<C-v>": false,
-    "<C-a>": false
-  },
-  "vim.visualModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<C-a>"
-      ],
-      "commands": [
-        "editor.action.selectAll"
-      ]
-    }
-  ],
-  "vim.insertModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<C-v>"
-      ],
-      "commands": [
-        "editor.action.clipboardPasteAction"
-      ]
-    }
-  ],
-  "vim.normalModeKeyBindingsNonRecursive": [
-    {
-      "before": [
-        "<C-v>"
-      ],
-      "commands": [
-        "editor.action.clipboardPasteAction"
-      ]
-    }
-  ],
-  "workbench.colorCustomizations": {
-    "editor.background": "#0A0A12",
-    "sideBar.background": "#101018",
-    "activityBar.background": "#141420",
-    "terminal.background": "#0A0A12",
-    "editor.lineHighlightBackground": "#1A1A2A80",
-    "editor.selectionBackground": "#ac0b0b",
-    "editorCursor.foreground": "#FFD700",
-    "editor.foreground": "#E0E0E0",
-    "editorLineNumber.foreground": "#4A4A5A",
-    "editorLineNumber.activeForeground": "#ff7b00",
-    "editorBracketMatch.background": "#2E4E3F40",
-    "editorBracketMatch.border": "#5A718455",
-    "statusBar.background": "#06060C"
-  },
-  "C_Cpp_Runner.cCompilerPath": "gcc",
-  "C_Cpp_Runner.cppCompilerPath": "g++",
-  "C_Cpp_Runner.debuggerPath": "gdb",
-  "C_Cpp_Runner.cStandard": "",
-  "C_Cpp_Runner.cppStandard": "",
-  "C_Cpp_Runner.msvcBatchPath": "C:/Program Files/Microsoft Visual Studio/VR_NR/Community/VC/Auxiliary/Build/vcvarsall.bat",
-  "C_Cpp_Runner.useMsvc": false,
-  "C_Cpp_Runner.warnings": [
-    "-Wall",
-    "-Wextra",
-    "-Wpedantic",
-    "-Wshadow",
-    "-Wformat=2",
-    "-Wcast-align",
-    "-Wconversion",
-    "-Wsign-conversion",
-    "-Wnull-dereference"
-  ],
- 
+        "normalModeKeyBindingsNonRecursive": [
+            {
+                "before": [
+                    "<C-v>"
+                ],
+                "commands": [
+                    "editor.action.clipboardPasteAction"
+                ]
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editor.lineHighlightBackground": "#1A1A2A80",
+        "editor.selectionBackground": "#ac0b0b",
+        "editorCursor.foreground": "#FFD700",
+        "editor.foreground": "#E0E0E0",
+        "editorLineNumber.foreground": "#4A4A5A",
+        "editorLineNumber.activeForeground": "#ff7b00"
+    },
+    "workbench.colorTheme": "Monokai",
+    "workbench.iconTheme": "vscode-icons",
+    "window.customTitleBarVisibility": "windowed"
+}
